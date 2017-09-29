@@ -1,0 +1,48 @@
+<html>
+<body>
+<?php
+if (isset($_GET['s_name']) && isset($_GET['s_id']) && isset($_GET['s_batch'])  )
+{
+    $s_name = $_GET['s_name'];
+    $s_id = $_GET['s_id'];
+    $s_batch = $_GET['s_batch'];
+    echo "Welcome $s_name<br> ";
+    echo "Your ID is  $s_batch$s_id<br> ";
+     echo"Continue with login";
+
+	<html>
+	<head>
+	<form action="http://localhost:1234/mentor_loginwindow.php" method="post">
+	<p>
+	<input type="submit" name="login" value="login" />
+	</p>
+	</form>
+	</html>
+	</head>
+
+
+
+}
+else
+{
+    $m_name = $_GET['m_name'];
+    $m_id = $_GET['m_id'];
+    $m_batch = $_GET['m_batch'];
+    echo "Welcome $m_name<br> ";
+    echo "Your ID is  $m_batch$m_id<br> ";
+    echo"Continue with login";
+
+	<html>
+	<head>
+	<form action="http://localhost:1234/student_loginwindow.php" method="post">
+	<p>
+	<input type="submit" name="login" value="login" />
+	</p>
+	</form>
+	</html>
+	</head>
+}
+?>
+
+</body>
+</html>

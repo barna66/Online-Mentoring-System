@@ -1,0 +1,29 @@
+<?php
+
+class ServiceProvider{
+	public function provideService($type)
+	{
+		if(!strcmp($type, "QuizService"))
+		{
+			$current = new getQuizForm();
+			return $current->getUrl();
+		}
+		
+		
+		if(!strcmp($type, "SearchForumService"))
+		{
+			$current = ();  // Link to search on forum
+			return $current->search
+		}
+		
+		
+		if(!strcmp($type, "PostOnForumService"))
+		{
+			$current =  // Link to post on Forum
+			return current; 
+		}
+	}
+}
+
+
+?>
